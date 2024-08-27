@@ -214,6 +214,7 @@ return (
 ```
 
 ### Logo
+#### 54 Logo and NavSearch Components
 
 ```sh
 npm install react-icons
