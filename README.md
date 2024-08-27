@@ -964,13 +964,25 @@ export const createProfileAction = async (
 };
 ```
 
-### Supabase
+### [Supabase](https://supabase.com/) - 2 project for free
+- Other DB sample
+  - [Render](https://render.com/)
+  - [Planetscale](https://planetscale.com/)
+  - [MongoDB](https://www.mongodb.com/)
+#### 67 Supabase Setup
 
-- create account and organization
+
+- create account and organization `GitHub` or `Gmail Account`
 - create project
 - setup password in .env (optional)
 - add .env to .gitignore !!!
 - it will take few minutes
+
+  - create New organization named by `Next.js Project`
+  - Project name `Next.js Projects`
+  - DB_PASSWORD in .env file `DB_PASSWORD=***` and add .gitignore `.env`
+  - Canada(Central)
+
 
 ### Prisma
 
