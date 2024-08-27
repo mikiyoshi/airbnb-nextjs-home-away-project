@@ -136,6 +136,9 @@ function HomePage() {
 export default HomePage;
 ```
 
+#### 52 Install More Shadcn/ui Components
+
+
 ```sh
 npx shadcn-ui@latest add breadcrumb calendar card checkbox dropdown-menu input label popover scroll-area select separator table textarea toast skeleton
 ```
