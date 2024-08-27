@@ -1034,6 +1034,7 @@ if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 ```
 
 ### Connect Supabase with Prisma
+#### 69 Connect Prisma and Supabase
 
 [Useful Info](https://supabase.com/partners/integrations/prisma)
 
@@ -1045,6 +1046,10 @@ DIRECT_URL=""
 ```
 
 - DATABASE_URL : Transaction + Password + "?pgbouncer=true&connection_limit=1"
+  - [Supabase](https://supabase.com/) 
+    - click `Connect` button at `Next.js Project` > `Temp HomeAway Draft`
+    - `Display connection pooler: Transaction mode` URL copy and paste .env file and replace `[YOUR-PASSWORD]` is `DB_PASSWORD` in .env file, add end `?pgbouncer=true&connection_limit=1`
+    - change `Display connection pooler: Session mode` URL copy and paste .env file and replace `[YOUR-PASSWORD]` is `DB_PASSWORD`
 - DIRECT_URL : Session + Password
 
 ```prisma
