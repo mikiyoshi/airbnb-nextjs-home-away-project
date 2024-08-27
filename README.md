@@ -594,16 +594,16 @@ export const config = {
 
 - restart dev server
 
-- You can check and setting at [Clerk Dashboard](https://dashboard.clerk.com/sign-in?redirect_url=https%3A%2F%2Fdashboard.clerk.com%2F)
-  - How many user create account
-  - Change `Customization` > `Avatars` Color
-
 ### SignUp/SignIn and Customize Avatar (optional)
 
 - customization
   - avatars
+    - You can check and setting at [Clerk Dashboard](https://dashboard.clerk.com/sign-in?redirect_url=https%3A%2F%2Fdashboard.clerk.com%2F)
+      - How many user create account
+      - Change `Customization` > `Avatars` Color
 
 ### Toast Component
+#### 59 SignOutLink Component
 
 [Toast](https://ui.shadcn.com/docs/components/toast)
 
