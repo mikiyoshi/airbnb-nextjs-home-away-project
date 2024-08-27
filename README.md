@@ -114,6 +114,7 @@ Ok to proceed? (y) y
 - New York
 - Zinc
 
+#### 51 Shadcn/ui Button Component
 
 ```sh
 npx shadcn-ui@latest add button
