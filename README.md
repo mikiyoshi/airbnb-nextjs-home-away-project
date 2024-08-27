@@ -917,7 +917,9 @@ export default CreateProfile;
 ```
 
 ### Zod
+#### 66 Zod Library
 
+[Zod Basic usage](https://zod.dev/?id=basic-usage)
 Zod is a JavaScript library for building schemas and validating data, providing type safety and error handling.
 
 ```sh
