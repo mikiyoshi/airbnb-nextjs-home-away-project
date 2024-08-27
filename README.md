@@ -322,6 +322,7 @@ export default NavSearch;
 ```
 
 ### Providers
+#### 56 Setup Dark Mode with Shadcn/ui
 
 - create app/providers.tsx
 
