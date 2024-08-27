@@ -752,6 +752,7 @@ export default CreateProfile;
 ```
 
 ### FormInput
+#### 62 FormInput Component
 
 - components/form/FormInput.tsx
 
