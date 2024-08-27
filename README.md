@@ -985,6 +985,7 @@ export const createProfileAction = async (
 
 
 ### Prisma
+#### 68 Prisma Setup
 
 - install prisma vs-code extension
 
@@ -1001,6 +1002,8 @@ npm install @prisma/client
 ```sh
 npx prisma init
 ```
+- created a file prisma/schema.prisma
+  - created .env file `DATABASE_URL` 
 
 ### Setup Instance
 
