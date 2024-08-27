@@ -76,7 +76,6 @@ export const metadata: Metadata = {
 - get a hold of the README.MD
 
 ### Create Pages
-
 #### 49 Create Pages
 
 - bookings
