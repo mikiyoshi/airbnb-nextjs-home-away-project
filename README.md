@@ -706,6 +706,7 @@ return (
 ```
 
 ### Direct User
+#### 61 Create Profile - Setup
 
 .env.local
 
@@ -717,7 +718,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/profile/create
 ### Create Profile
 
 - profile
-  - create
+  - create/page.tsx
 
 ```tsx
 import { Label } from '@/components/ui/label';
