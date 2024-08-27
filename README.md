@@ -519,17 +519,25 @@ export default LinksDropdown;
 ```
 
 ### Clerk
+#### 58 Setup and Customize Clerk Auth Provider
 
 [Clerk Docs](https://clerk.com/)
 [Clerk + Next.js Setup](https://clerk.com/docs/quickstarts/nextjs)
 
 - create new application
 
+  - create account `GitHub`, `Gmail` or `PW and ID`
+  - New Application
+    - `temp-home-away`
+      - add `GitHub` Sign in options
+  - click `create application`
+
 ```sh
 npm install @clerk/nextjs
 ```
 
 - create .env.local
+  - Get `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` from after `create application` page
 
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
@@ -585,6 +593,10 @@ export const config = {
 ```
 
 - restart dev server
+
+- You can check and setting at [Clerk Dashboard](https://dashboard.clerk.com/sign-in?redirect_url=https%3A%2F%2Fdashboard.clerk.com%2F)
+  - How many user create account
+  - Change `Customization` > `Avatars` Color
 
 ### SignUp/SignIn and Customize Avatar (optional)
 
