@@ -96,6 +96,7 @@ export default BookingsPage;
 ```
 
 ### Shadcn/ui
+#### 50 Install Shadcn/ui Library
 
 [Docs](https://ui.shadcn.com/)
 
@@ -103,11 +104,16 @@ export default BookingsPage;
 
 ```sh
 npx shadcn-ui@latest init
+Ok to proceed? (y) y
 
+✔ Which style would you like to use? › `New York`
+✔ Which color would you like to use as base color? › `Zinc`
+✔ Would you like to use CSS variables for colors? … no / `yes`
 ```
 
 - New York
 - Zinc
+
 
 ```sh
 npx shadcn-ui@latest add button
