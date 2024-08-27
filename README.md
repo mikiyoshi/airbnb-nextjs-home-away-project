@@ -39,6 +39,8 @@ export default page
 # 02 Home Away Project
 
 ### Next App
+#### 46 Project Overview
+#### 47 Install New Next.js Application
 
 ```sh
 
@@ -50,6 +52,7 @@ npm run dev
 ```
 
 ### Remove Boilerplate
+#### 48 Remove Boilerplate
 
 - in globals.css remove all code after directives
 - page.tsx
@@ -73,6 +76,8 @@ export const metadata: Metadata = {
 - get a hold of the README.MD
 
 ### Create Pages
+
+#### 49 Create Pages
 
 - bookings
 - checkout
