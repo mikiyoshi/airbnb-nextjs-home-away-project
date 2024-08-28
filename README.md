@@ -1329,6 +1329,7 @@ export const updateProfileAction = async (
 };
 ```
 
+#### 75 Update Profile Page
 app/profile/page.tsx
 
 ```tsx
