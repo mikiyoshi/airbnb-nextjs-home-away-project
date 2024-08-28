@@ -12,12 +12,10 @@ export const createProfileAction = async (
 ) => {
   try {
     const user = await currentUser();
-    // console.log(user);
     if (!user) throw new Error('Please login to create a profile');
 
     const rawData = Object.fromEntries(formData);
     const validatedFields = profileSchema.parse(rawData);
-    // console.log(validatedFields);
 
     await db.profile.create({
       data: {
@@ -33,13 +31,25 @@ export const createProfileAction = async (
         hasProfile: true,
       },
     });
-
-    // return { message: 'Profile Created' };
   } catch (error) {
-    // console.log(error);
     return {
       message: error instanceof Error ? error.message : 'An error occurred',
     };
   }
   redirect('/');
+};
+
+export const fetchProfileImage = async () => {
+  const user = await currentUser();
+  if (!user) return null;
+
+  const profile = await db.profile.findUnique({
+    where: {
+      clerkId: user.id,
+    },
+    select: {
+      profileImage: true,
+    },
+  });
+  return profile?.profileImage;
 };

@@ -1237,6 +1237,7 @@ export const createProfileAction = async (
 ```
 
 ### FetchProfileImage
+#### 72 Fetch Profile Image Action
 
 actions.ts
 
@@ -1263,7 +1264,7 @@ export const fetchProfileImage = async () => {
 import { LuUser2 } from 'react-icons/lu';
 import { fetchProfileImage } from '@/utils/actions';
 
-async function UserIcon() {
+async function UserIcon() { // if u want to use `await`, u need to use `async` too
   const profileImage = await fetchProfileImage();
 
   if (profileImage)
