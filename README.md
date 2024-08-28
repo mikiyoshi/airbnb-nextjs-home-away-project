@@ -1085,6 +1085,8 @@ npx prisma studio
 ```
 
 ## Optional - Prisma Crud
+#### 70 Prisma Crud Examples
+#### MERN GET, POST, DELETE, PUSH
 
 [Prisma Docs](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
 
