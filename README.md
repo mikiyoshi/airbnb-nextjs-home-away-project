@@ -1449,6 +1449,7 @@ export const updateProfileAction = async (
 ```
 
 ### ValidateWithZodSchema
+#### 76 Zod SafeParse Method
 
 schemas.ts
 
