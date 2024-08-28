@@ -1291,6 +1291,7 @@ async function CreateProfile() {
 ```
 
 ### Update Profile
+#### 74 Fetch User Profile
 
 actions.ts
 
