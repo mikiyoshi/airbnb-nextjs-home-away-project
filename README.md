@@ -1164,6 +1164,7 @@ const deleteTask = await prisma.task.delete({
 ```
 
 ### Profile Model
+#### 71 Create Profile Model and createProfileAction
 
 ```prisma
 model Profile {
@@ -1179,7 +1180,8 @@ model Profile {
 
 }
 ```
-
+  - Backend server update in Terminal `npx prisma studio` and http://localhost:5555
+  - Frontend server in Terminal `npm run dev` and http://localhost:3000
 ```bash
 npx prisma db push
 ```
@@ -1190,7 +1192,10 @@ npx prisma studio
 
 ### CreateProfile Action - Complete
 
-[Clerk User Metadata](https://clerk.com/docs/users/metadata)
+[Clerk User Metadata](https://clerk.com/docs/users/metadata) this Clerk is related with Backend
+  - Backend server update in Terminal `npx prisma studio` and http://localhost:5555
+  - Frontend server in Terminal `npm run dev` and http://localhost:3000
+
 
 ```ts
 import db from './db';
