@@ -32,7 +32,6 @@ export const createProfileAction = async (
     if (!user) throw new Error('Please login to create a profile');
 
     const rawData = Object.fromEntries(formData);
-    // const validatedFields = profileSchema.parse(rawData);
     const validatedFields = validateWithZodSchema(profileSchema, rawData);
 
     await db.profile.create({
@@ -89,7 +88,6 @@ export const updateProfileAction = async (
   const user = await getAuthUser();
   try {
     const rawData = Object.fromEntries(formData);
-    // const validatedFields = profileSchema.parse(rawData);
     const validatedFields = validateWithZodSchema(profileSchema, rawData);
 
     await db.profile.update({
@@ -104,7 +102,6 @@ export const updateProfileAction = async (
         clerkId: user.id,
       },
       data: validatedFields,
-      // data: validatedFields.data,
     });
     revalidatePath('/profile');
     return { message: 'Profile updated successfully' };

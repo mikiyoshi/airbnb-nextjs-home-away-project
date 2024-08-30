@@ -1488,6 +1488,7 @@ await db.profile.update({
 ```
 
 ### ImageInput
+#### 78 Image Input
 
 components/form/ImageInput.tsx
 
