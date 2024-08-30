@@ -1674,6 +1674,7 @@ export default nextConfig;
 ```
 
 ### imageSchema
+#### 80 Image Zod Validation
 
 schemas.ts
 
