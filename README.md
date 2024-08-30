@@ -1724,7 +1724,17 @@ export const updateProfileImageAction = async (
 ```
 
 ### Create Bucket, Setup Policy and API Keys
+#### 81 Supabase Bucket and Keys
 
+- [Supabase](https://supabase.com/dashboard/)
+  - Strage
+    - create `New bucket` named `temp-home-away`
+    - At `Configuration` > `Policies`
+      - create `New policy` > `For full customization` named `default policy`
+  - Project Settings
+    - Configuration `API`
+      - `Project URL` is `SUPABASE_URL`
+      - `Project API keys` is `SUPABASE_KEY`
 ```env
 SUPABASE_URL=
 SUPABASE_KEY=
@@ -1741,7 +1751,8 @@ utils/supabase.ts
 ```ts
 import { createClient } from '@supabase/supabase-js';
 
-const bucket = 'home-away-draft';
+// const bucket = 'home-away-draft';
+const bucket = 'home-away-away';
 
 // Create a single supabase client for interacting with your database
 export const supabase = createClient(
