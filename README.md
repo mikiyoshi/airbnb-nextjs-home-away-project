@@ -2031,6 +2031,7 @@ export default PriceInput;
 ```
 
 ### Categories Data
+#### 88 Categories Input
 
 - utils/categories.ts
 
@@ -2108,6 +2109,7 @@ export const categories: Category[] = [
 ```
 
 ### Categories Input
+- components/form/CategoriesInput.tsx
 
 ```tsx
 import { Label } from '@/components/ui/label';
