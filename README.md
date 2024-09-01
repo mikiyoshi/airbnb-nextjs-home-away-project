@@ -2281,6 +2281,7 @@ export default CountriesInput;
 ```
 
 ### Accommodation / Counter Input
+#### 91 Counter Input
 
 - components/form/CounterInput.tsx
 
