@@ -7,7 +7,6 @@ import {
 import FormInput from '@/components/form/FormInput';
 import { SubmitButton } from '@/components/form/Buttons';
 import ImageInputContainer from '@/components/form/ImageInputContainer';
-
 async function ProfilePage() {
   const profile = await fetchProfile();
 
@@ -21,7 +20,6 @@ async function ProfilePage() {
           action={updateProfileImageAction}
           text="Update Profile Image"
         />
-
         <FormContainer action={updateProfileAction}>
           <div className="grid gap-4 md:grid-cols-2 mt-4 ">
             <FormInput

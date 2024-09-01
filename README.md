@@ -533,7 +533,8 @@ export default LinksDropdown;
   - click `create application`
 
 ```sh
-npm install @clerk/nextjs
+# npm install @clerk/nextjs
+npm install @clerk/nextjs@5.0.1
 ```
 
 - create .env.local
@@ -923,7 +924,8 @@ export default CreateProfile;
 Zod is a JavaScript library for building schemas and validating data, providing type safety and error handling.
 
 ```sh
-npm install zod
+# npm install zod
+npm install zod@3.22.4
 ```
 
 - create utils/schemas.ts
@@ -995,8 +997,10 @@ Prisma ORM is a database toolkit that simplifies database access in web applicat
 - Prisma client: An auto-generated library that connects to the Prisma server and lets you read, write and stream data in your database. It is used for data access in your applications.
 
 ```sh
-npm install prisma --save-dev
-npm install @prisma/client
+# npm install prisma --save-dev
+# npm install @prisma/client
+npm install prisma@5.12.1 --save-dev
+npm install @prisma/client@5.12.1
 ```
 
 ```sh
@@ -1687,10 +1691,11 @@ function validateFile() {
   const maxUploadSize = 1024 * 1024;
   const acceptedFileTypes = ['image/'];
   return z
-    .instanceof(File)
+    // .instanceof(File) // it's error
+    .any()
     .refine((file) => {
       return !file || file.size <= maxUploadSize;
-    }, `File size must be less than 1 MB`)
+    }, 'File size must be less than 1 MB')
     .refine((file) => {
       return (
         !file || acceptedFileTypes.some((type) => file.type.startsWith(type))
@@ -1741,9 +1746,11 @@ SUPABASE_KEY=
 ```
 
 ### Setup Supabase
+#### 82 Supabase Upload Image
 
 ```sh
-npm install @supabase/supabase-js
+# npm install @supabase/supabase-js
+npm install @supabase/supabase-js@2.42.5
 ```
 
 utils/supabase.ts
@@ -1752,7 +1759,7 @@ utils/supabase.ts
 import { createClient } from '@supabase/supabase-js';
 
 // const bucket = 'home-away-draft';
-const bucket = 'home-away-away';
+const bucket = 'temp-home-away';
 
 // Create a single supabase client for interacting with your database
 export const supabase = createClient(
@@ -1776,6 +1783,7 @@ export const uploadImage = async (image: File) => {
 ```
 
 ### updateProfileImageAction
+#### 83 Update Profile Image Action - Complete
 
 ```ts
 export const updateProfileImageAction = async (
