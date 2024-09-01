@@ -1835,6 +1835,7 @@ export default nextConfig;
 ```
 
 ### Property Model
+#### 85 Property Schema
 
 ```prisma
 model Profile {
@@ -1861,6 +1862,12 @@ model Property {
   profileId   String
 }
 ```
+
+```sh
+npx prisma db push
+npx prisma studio 
+```
+- check at `http://localhost:5555/` and left corner close `Profile` tub and choose `Property`
 
 ### Property Schema
 
