@@ -2204,9 +2204,11 @@ export default TextAreaInput;
 ```
 
 ### Countries Input
+#### 90 Countries Input
 
 ```sh
-npm i world-countries
+# npm i world-countries
+npm i world-countries@5.0.0
 ```
 
 - utils/countries.ts
