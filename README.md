@@ -1870,6 +1870,7 @@ npx prisma studio
 - check at `http://localhost:5555/` and left corner close `Profile` tub and choose `Property`
 
 ### Property Schema
+#### 86 Create Property Page - Setup
 
 - yes, no image 😜
 
