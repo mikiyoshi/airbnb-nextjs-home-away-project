@@ -1990,6 +1990,7 @@ export default CreateProperty;
 ```
 
 ### Price Input
+#### 87 Price Input
 
 - components/form/PriceInput.tsx
 
