@@ -2665,6 +2665,7 @@ export default HomePage;
 ```
 
 ### CategoriesList
+#### 96 Categories List
 
 ```tsx
 import { categories } from '@/utils/categories';
