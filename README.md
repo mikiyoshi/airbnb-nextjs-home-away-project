@@ -2612,6 +2612,7 @@ export const fetchProperties = async ({
 ```
 
 ### Home Page
+#### 95 Home Page - Setup
 
 - create in components/home
   - CategoriesList.tsx
