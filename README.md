@@ -2741,6 +2741,7 @@ export default EmptyList;
 ```
 
 ### PropertiesContainer
+#### 98 Properties Container
 
 ```tsx
 import { fetchProperties } from '@/utils/actions';
