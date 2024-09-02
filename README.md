@@ -36,6 +36,14 @@ function page() {
 export default page
 ```
 
+# Cursor Code Editor
+- cursor turn of sound
+  - [VSCodeやCursorで突然音が鳴り出した時の対処法](https://qiita.com/takuyaWt/items/0bcdc87cc01cefe6199d)
+    - cursor > preferences > VS code setting
+      - Accessibility Support: off
+  - [How to disable audio sounds?](https://forum.cursor.com/t/how-to-disable-audio-sounds/4370)
+    - Ctrl/Cmd + P → Type ">Sound" → Click on "List Signal Sounds" → Uncheck all → OK
+
 # 02 Home Away Project
 
 ### Next App
@@ -2557,6 +2565,7 @@ export const createPropertyAction = async (
 ```
 
 ### fetchProperties
+#### 94 Fetch Properties
 
 utils/types.ts
 
