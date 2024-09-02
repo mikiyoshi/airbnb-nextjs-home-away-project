@@ -2777,6 +2777,7 @@ export default PropertiesContainer;
 ```
 
 ### Card Components
+#### 99 PropertyCard - Setup
 
 - components/card
   - CountryFlagAndName.tsx
