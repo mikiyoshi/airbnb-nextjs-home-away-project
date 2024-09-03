@@ -3034,9 +3034,11 @@ export default HomePage;
 ```
 
 ### SearchInput
+#### 105 NavSearch Component
 
 ```sh
-npm i use-debounce
+# npm i use-debounce
+npm i use-debounce@10.0.0
 ```
 
 components/navbar/NavSearch.tsx
