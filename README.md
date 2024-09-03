@@ -2911,6 +2911,7 @@ export default PropertyRating;
 ```
 
 ### FavoriteToggleButton
+#### 102 Favorites Toggle Button
 
 ```tsx
 import { FaHeart } from 'react-icons/fa';
