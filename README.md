@@ -3164,6 +3164,7 @@ export default FavoriteToggleButton;
 ```
 
 ### fetchFavorite
+#### 107 Fetch Favorite
 
 actions.ts
 
