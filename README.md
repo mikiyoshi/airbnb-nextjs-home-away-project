@@ -3845,17 +3845,20 @@ export default Amenities;
 ```
 
 ### PropertyMap
+#### 120 Property Map  Component 
 
 [React Leaflet](https://react-leaflet.js.org/)
 
 Leaflet makes direct calls to the DOM when it is loaded, therefore React Leaflet is not compatible with server-side rendering.
 
 ```sh
-npm install react react-dom leaflet react-leaflet
+# npm install react react-dom leaflet react-leaflet
+npm install react@18.3.1 react-dom@18.3.1 leaflet@1.9.4 react-leaflet@4.2.1
 ```
 
 ```sh
-npm install -D @types/leaflet
+# npm install -D @types/leaflet
+npm install -D @types/leaflet@1.9.12
 ```
 
 - components/properties/PropertyMap.tsx
