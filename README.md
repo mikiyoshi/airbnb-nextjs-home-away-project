@@ -3465,11 +3465,13 @@ return (
 ```
 
 ### ShareButton
+#### 113 Share Button Component
 
 [React Share](https://www.npmjs.com/package/react-share)
 
 ```sh
-npm i react-share
+# npm i react-share
+npm i react-share@5.1.0
 ```
 
 - components/properties/ShareButton.tsx
