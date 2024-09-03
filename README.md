@@ -3368,6 +3368,7 @@ export default FavoritesPage;
 ```
 
 ### fetchPropertyDetails
+#### 111 Property Details Page - Setup
 
 - utils/actions.ts
 
