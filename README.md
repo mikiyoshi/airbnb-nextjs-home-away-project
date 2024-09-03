@@ -3270,6 +3270,7 @@ export default FavoriteToggleForm;
 ```
 
 ### toggleFavoriteAction
+#### 109 Toggle Favorites - Functionality
 
 actions.ts
 
