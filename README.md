@@ -3603,6 +3603,7 @@ return (
 ```
 
 ### Calendar - Initial Setup
+#### 115 Calendar Component
 
 - components/properties/booking/BookingCalendar.tsx
 
@@ -3612,7 +3613,8 @@ import { useState } from 'react';
 import { Calendar } from '@/components/ui/calendar';
 import { DateRange } from 'react-day-picker';
 
-export default function App() {
+// export default function App() {
+function BookingCalendar() {
   const currentDate = new Date();
   const defaultSelected: DateRange = {
     from: undefined,
@@ -3630,6 +3632,7 @@ export default function App() {
     />
   );
 }
+export default BookingCalendar;
 ```
 
 - properties/[id]/page.tsx
