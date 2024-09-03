@@ -3691,6 +3691,7 @@ export default PropertyDetails;
 ```
 
 ### UserInfo
+#### 117 UserInfo Component
 
 - components/properties/UserInfo.tsx
 
