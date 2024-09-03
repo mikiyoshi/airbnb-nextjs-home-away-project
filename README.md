@@ -2958,10 +2958,21 @@ export default CountryFlagAndName;
 ```
 
 ### Suspense
+#### 104 Loading Cards
 
 - app/loading.tsx - always an option
 
+```tsx
+'use client';
+
+function loading() {
+  return <div>loading...</div>;
+}
+export default loading;
+```
+
 components/card/LoadingCards.tsx
+- [shadcn/ui Skeleton card](https://ui.shadcn.com/docs/components/skeleton)
 
 ```tsx
 import { Skeleton } from '@/components/ui/skeleton';
