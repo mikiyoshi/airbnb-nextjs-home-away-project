@@ -3798,6 +3798,7 @@ export default Description;
 ```
 
 ### Amenities
+#### 119 Amenities Component
 
 - components/properties/Amenities.tsx
 
