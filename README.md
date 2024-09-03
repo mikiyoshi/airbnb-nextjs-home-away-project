@@ -3740,6 +3740,7 @@ const profileImage = property.profile.profileImage;
 ```
 
 ### Description
+#### 118 Description Component
 
 - components/properties/Title.tsx
 
