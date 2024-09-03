@@ -3645,6 +3645,7 @@ export default BookingCalendar;
 ```
 
 ### PropertyDetails
+#### 116 Property Details Component
 
 - utils/format.ts
 
