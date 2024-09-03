@@ -225,6 +225,7 @@ export const fetchFavoriteId = async ({
   return favorite?.id || null;
 };
 
+// Favorite add or remove function
 export const toggleFavoriteAction = async (prevState: {
   propertyId: string;
   favoriteId: string | null;
@@ -252,4 +253,26 @@ export const toggleFavoriteAction = async (prevState: {
   } catch (error) {
     return renderError(error);
   }
+};
+
+export const fetchFavorites = async () => {
+  const user = await getAuthUser();
+  const favorites = await db.favorite.findMany({
+    where: {
+      profileId: user.id,
+    },
+    select: {
+      property: {
+        select: {
+          id: true,
+          name: true,
+          tagline: true,
+          price: true,
+          country: true,
+          image: true,
+        },
+      },
+    },
+  });
+  return favorites.map((favorite) => favorite.property);
 };

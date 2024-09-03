@@ -3306,6 +3306,7 @@ export const toggleFavoriteAction = async (prevState: {
 ```
 
 ### fetchFavorites
+#### 110 Favorites Page
 
 actions.ts
 
