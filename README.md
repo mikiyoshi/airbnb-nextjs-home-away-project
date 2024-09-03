@@ -3089,6 +3089,7 @@ export default NavSearch;
 ```
 
 ### Favorites Model
+#### 106 Favorites SignIn Button
 
 ```prisma
 
