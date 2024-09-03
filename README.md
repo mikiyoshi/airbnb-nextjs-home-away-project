@@ -2876,6 +2876,7 @@ export default PropertyCard;
 ```
 
 ### Property Rating
+#### 101 Property Rating
 
 ```tsx
 import { FaStar } from 'react-icons/fa';
