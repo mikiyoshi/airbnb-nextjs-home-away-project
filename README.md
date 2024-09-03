@@ -2822,6 +2822,7 @@ export const formatCurrency = (amount: number | null) => {
 ```
 
 ### PropertyCard
+#### 100 PropertyCard - Structure
 
 ```tsx
 import Image from 'next/image';
