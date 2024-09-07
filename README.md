@@ -3934,7 +3934,7 @@ Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page.
   - Some students have reported that their Supabase connection works locally, but once the project is deployed on Vercel, they encounter an error. If you experience the same issue, please continue with the lectures, as I provide a solution in later sessions.
 
 ### Deploy
-#### 122 Deploy Application on Vercel
+#### 122 Deploy Application on Vercel // recovered
 
 ```json
 "scripts": {
