@@ -3988,6 +3988,20 @@ git push origin master
 
 - refactor NavSearch Component
 
+- Vercel setting
+  - `.env` 
+    - DATABASE_URL
+    - DIRECT_URL
+    - SUPABASE_URL
+    - SUPABASE_KEY
+  - `.env.local`
+    - NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+    - CLERK_SECRET_KEY
+    - NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL
+    - NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL
+    - NEXT_PUBLIC_WEBSITE_URL // this will be update after Vercel's URL
+
+
 ### Review Model
 
 ```prisma
