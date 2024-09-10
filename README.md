@@ -3936,6 +3936,46 @@ Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page.
 ### Deploy
 #### 122 Deploy Application on Vercel
 
+# Big Trouble
+## Don't Use `rm -rf .git` 全ての .git ローカル履歴削除
+## Don't Use `git push origin master --force` 全ての .git リモート履歴削除
+```
+rm -rf .git
+git init
+git add .
+git commit -m "122 Deploy Application on Vercel update"
+git push origin master
+git push origin master --force
+```
+# Recovery 修復
+- [git push --forceで履歴は消えないと言う話](https://blog.keiji.dev/2023/06/git_push_force_do_not_delete_commit.html)
+- [ローカルブランチに特定のリモートブランチをpull](https://qiita.com/hinatades/items/d47dec72a87c5fed50f7)
+- [これで完璧! 図解でわかるgit rebaseの2つの使い方!](https://www.sejuku.net/blog/71919)
+- [Gitでrebase前の状態を確認する](https://qiita.com/okmt765/items/d7d3437a16c8fe9838d3)
+- [fatal: refusing to merge unrelated historiesを解決する話](https://qiita.com/mei28/items/85bc881ac1f26332ac15)
+- [共通の祖先を持っていないもの同士をmerge](https://qiita.com/fuku122/items/86290a76bd8fbf020af7)
+- 
+## git checkout fdccd7945c6014f8aa6453653ac30f0682406ff6 -b backup
+### `fdccd7945c6014f8aa6453653ac30f0682406ff6` この commit 履歴は
+- [Activity](https://github.com/mikiyoshi/airbnb-nextjs-home-away-project/compare/fdccd7945c6014f8aa6453653ac30f0682406ff6...7223b31f11b702342e17ca3174276b0a497a683e)
+- Git Home の右メニュー About 内の `Activity`
+- `Force Push` した commit の右ボタン `Comparing changes`
+- 上部に `XXXXX(Force Push前) and YYYYY(Force Push後) are entirely different commit histories.` が表示されるので、`XXXXX(Force Push前)` に戻す
+
+```
+git checkout fdccd7945c6014f8aa6453653ac30f0682406ff6 -b backup // .git の履歴より、`git push origin master --force` 以前の状態を新しい branch `backup` に作成
+git add .
+git commit -m "backup"
+git push origin backup
+git checkout master
+// git merge backup Error `fatal: refusing to merge unrelated histories`
+git merge --allow-unrelated-histories origin/backup // `git push origin master --force` 後の状態に、以前の履歴を強制的に merge する
+git add .
+git commit -m "merge --allow-unrelated-histories origin/backup"
+git push origin master
+```
+
+
 
 ```json
 "scripts": {
@@ -3946,11 +3986,6 @@ Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page.
   },
 ```
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/backup
 - refactor NavSearch Component
 
 ### Review Model
