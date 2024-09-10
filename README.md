@@ -3929,12 +3929,13 @@ Lazy Loading: Components wrapped with dynamic are lazy loaded. This means that t
 
 Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page. This means that it generates HTML for each page in advance, instead of doing it all on the client-side. However, with dynamic, you can control this behavior. You can choose to disable SSR for specific modules, which can be useful for modules that have client-side dependencies.
 
-#### 121 Supabase Bug !!!
+#### 121 Supabase Bug !!! // branch backup
 - Supabase Bug !!!
   - Some students have reported that their Supabase connection works locally, but once the project is deployed on Vercel, they encounter an error. If you experience the same issue, please continue with the lectures, as I provide a solution in later sessions.
 
 ### Deploy
 #### 122 Deploy Application on Vercel
+
 
 ```json
 "scripts": {
@@ -3945,8 +3946,11 @@ Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page.
   },
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/backup
 - refactor NavSearch Component
 
 ### Review Model
