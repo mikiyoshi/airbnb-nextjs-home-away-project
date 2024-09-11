@@ -4118,6 +4118,7 @@ export default RatingInput;
 ```
 
 ### SubmitReview Component
+#### 125 SubmitReviews Component
 
 - app/properties/[id]
 

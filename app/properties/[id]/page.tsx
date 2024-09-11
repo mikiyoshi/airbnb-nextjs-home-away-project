@@ -8,6 +8,7 @@ import ImageContainer from '@/components/properties/ImageContainer';
 import PropertyDetails from '@/components/properties/PropertyDetails';
 import ShareButton from '@/components/properties/ShareButton';
 import UserInfo from '@/components/properties/UserInfo';
+import SubmitReview from '@/components/reviews/SubmitReview';
 import { Separator } from '@/components/ui/separator';
 import { Skeleton } from '@/components/ui/skeleton';
 import { fetchPropertyDetails } from '@/utils/actions';
@@ -43,9 +44,7 @@ async function PropertyDetailsPage({ params }: { params: { id: string } }) {
           <FavoriteToggleButton propertyId={property.id} />
         </div>
       </header>
-
       <ImageContainer mainImage={property.image} name={property.name} />
-
       <section className="lg:grid lg:grid-cols-12 gap-x-12 mt-12">
         <div className="lg:col-span-8">
           <div className="flex gap-x-4 items-center">
@@ -68,6 +67,8 @@ async function PropertyDetailsPage({ params }: { params: { id: string } }) {
           <BookingCalendar />
         </div>
       </section>
+      {/* review */}
+      <SubmitReview propertyId={property.id} />
     </section>
   );
 }
