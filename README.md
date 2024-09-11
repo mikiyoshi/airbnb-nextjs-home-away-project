@@ -4065,6 +4065,7 @@ export const deleteReviewAction = async () => {
 ```
 
 ### RatingInput
+#### 124 RatingInput Component
 
 - components/form/RatingInput.tsx
 
