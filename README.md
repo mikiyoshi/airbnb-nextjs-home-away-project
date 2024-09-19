@@ -5541,6 +5541,7 @@ export async function deleteRentalAction(prevState: { propertyId: string }) {
 ```
 
 ### Rentals Page
+#### 151 Rentals Page
 
 - create rentals/loading.tsx
 
