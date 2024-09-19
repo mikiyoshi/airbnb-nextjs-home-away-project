@@ -5040,6 +5040,7 @@ export default BookingContainer;
 ```
 
 ### CalculateTotals
+#### 140 Calculate Totals
 
 - utils/calculateTotals.ts
 
