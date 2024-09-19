@@ -5166,6 +5166,7 @@ export default ConfirmBooking;
 ```
 
 ### CreateBookingAction
+#### 143 Create Booking Action
 
 ```tsx
 export const createBookingAction = async (prevState: {
