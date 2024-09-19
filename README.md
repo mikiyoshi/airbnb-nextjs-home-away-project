@@ -5237,6 +5237,7 @@ export default BookingCalendar;
 ```
 
 ### Unavailable Dates
+#### 145 Disabled Dates
 
 BookingCalendar.tsx
 
