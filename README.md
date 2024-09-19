@@ -5471,6 +5471,7 @@ export default loading;
 ```
 
 ### Fetch and Delete Rentals
+#### 150 Fetch and Delete Rentals Functions
 
 - actions.ts
 
