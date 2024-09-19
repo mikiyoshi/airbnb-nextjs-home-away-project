@@ -4782,11 +4782,13 @@ export type Booking = {
   - ConfirmBooking.tsx
 
 ### Zustand
+#### 138 Zustand Library
 
 [Docs](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 ```sh
-npm install zustand
+# npm install zustand
+npm install zustand@4.5.2
 ```
 
 ### Setup Store
