@@ -4694,6 +4694,7 @@ export default PropertyRating;
 ```
 
 ### Booking Model
+#### 136 Booking Model
 
 - schema.prisma
 
