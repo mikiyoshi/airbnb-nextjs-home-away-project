@@ -4288,6 +4288,7 @@ export default PropertyReviews;
 ```
 
 ### ReviewCard Component
+#### 129 ReviewCard Component
 
 ```tsx
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
