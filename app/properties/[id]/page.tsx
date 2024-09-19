@@ -1,7 +1,7 @@
 import FavoriteToggleButton from '@/components/card/FavoriteToggleButton';
 import PropertyRating from '@/components/card/PropertyRating';
 import Amenities from '@/components/properties/Amenities';
-import BookingCalendar from '@/components/properties/booking/BookingCalendar';
+// import BookingCalendar from '@/components/properties/booking/BookingCalendar';
 import BreadCrumbs from '@/components/properties/BreadCrumbs';
 import Description from '@/components/properties/Description';
 import ImageContainer from '@/components/properties/ImageContainer';
@@ -39,6 +39,8 @@ async function PropertyDetailsPage({ params }: { params: { id: string } }) {
   const reviewDoesNotExist =
     userId && isNotOwner && !(await findExistingReview(userId, property.id));
 
+  // console.log(property.bookings);
+
   return (
     <section>
       <BreadCrumbs name={property.name} />
@@ -71,7 +73,7 @@ async function PropertyDetailsPage({ params }: { params: { id: string } }) {
         </div>
         <div className="lg:col-span-4 flex flex-col items-center">
           {/* calendar */}
-          <BookingCalendar />
+          {/* <BookingCalendar /> */}
         </div>
       </section>
       {/* review */}
