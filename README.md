@@ -4401,6 +4401,7 @@ export default Comment;
 ```
 
 ### Fetch User's Reviews and Delete Review
+#### 130 Fetch and Delete User Reviews
 
 ```ts
 export const fetchPropertyReviewsByUser = async () => {
