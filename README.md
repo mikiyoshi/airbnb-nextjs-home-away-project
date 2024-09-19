@@ -4537,6 +4537,8 @@ const DeleteReview = ({ reviewId }: { reviewId: string }) => {
 export default ReviewsPage;
 ```
 
+#### 133 Reviews Loading Component
+<!-- - app/reviews/loading.tsx -->
 - loading.tsx
 
 ```tsx
