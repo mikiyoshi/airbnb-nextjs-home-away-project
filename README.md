@@ -5331,6 +5331,7 @@ export async function deleteBookingAction(prevState: { bookingId: string }) {
 
 ### Bookings Page
 #### 147 Bookings Page
+#### 148 Delete Booking
 
 - utils/format.ts
 
