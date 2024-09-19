@@ -5209,6 +5209,7 @@ export const createBookingAction = async (prevState: {
 ```
 
 ### Blocked Periods/Dates
+#### 144 Blocked Periods
 
 BookingCalendar.tsx
 
