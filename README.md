@@ -5436,6 +5436,7 @@ export default BookingsPage;
 ```
 
 ### LoadingTable
+#### 149 Loading Table Component
 
 - create @/components/booking/LoadingTable.tsx
 
