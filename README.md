@@ -6280,6 +6280,7 @@ export const formatDate = (date: Date, onlyMonth?: boolean) => {
 ```
 
 ### Admin User - ChartsContainer
+#### 164 Admin Page - Chart Container
 
 ```tsx
 import { fetchChartsData } from '@/utils/actions';
@@ -6299,7 +6300,8 @@ export default ChartsContainer;
 [Recharts](https://recharts.org/en-US/)
 
 ```sh
-npm install recharts
+# npm install recharts
+npm install recharts@2.12.7
 ```
 
 ### Admin User - Chart Component
