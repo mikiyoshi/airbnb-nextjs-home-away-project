@@ -5759,6 +5759,7 @@ export default EditRentalPage;
 ```
 
 ### Amenities Input
+#### 154 Amenities Input Gotcha
 
 ```tsx
 'use client';
