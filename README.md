@@ -6610,6 +6610,7 @@ export const createBookingAction = async (prevState: {
   - fetchChartsData
 
 ### Reservation Stats
+#### 170 Reservations Stats
 
 - actions.ts
 
@@ -6655,7 +6656,7 @@ async function Stats() {
     <div className='mt-8 grid md:grid-cols-2 gap-4 lg:grid-cols-3'>
       <StatsCards title='properties' value={stats.properties} />
       <StatsCards title='nights' value={stats.nights} />
-      <StatsCards title='total' value={formatCurrency(stats.amount)} />
+      <StatsCards title='amount' value={formatCurrency(stats.amount)} />
     </div>
   );
 }
