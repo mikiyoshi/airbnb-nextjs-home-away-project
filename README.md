@@ -6567,6 +6567,7 @@ export const GET = async (req: NextRequest) => {
   - Booking `paymentStatus` `true`
 
 ### Refactor Actions
+#### 169 Stripe - Refactor Queries
 
 - remove all bookings with 'paymentStatus' false, before creating a booking
   createBookingAction.ts
