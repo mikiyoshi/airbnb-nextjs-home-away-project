@@ -6345,14 +6345,26 @@ export default Chart;
 ```
 
 ### Stripe
+#### 165 Stripe - Setup
 
+
+[Stripe](https://stripe.com/)
+- Create New Account `HomeAwayDraft` 
 [Embedded Form](https://docs.stripe.com/checkout/embedded/quickstart)
+- Frontend: `Next.js`
 
 - setup and add keys to .env
+
+```sh
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+```
+
 - install
 
 ```sh
-npm install --save @stripe/react-stripe-js @stripe/stripe-js stripe axios
+# npm install --save @stripe/react-stripe-js @stripe/stripe-js stripe axios
+npm install --save @stripe/react-stripe-js@2.7.1 @stripe/stripe-js@3.4.1 stripe@15.8.0 axios@1.7.2
 ```
 
 ### Refactor createBookingAction
