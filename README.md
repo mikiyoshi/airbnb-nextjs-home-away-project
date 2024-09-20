@@ -6055,6 +6055,7 @@ const isPublicRoute = createRouteMatcher(['/', '/properties(.*)']);
 
 const isAdminRoute = createRouteMatcher(['/admin(.*)']);
 export default clerkMiddleware(async (auth, req) => {
+  // console.log('userId: ', auth().userId); これで `ADMIN_USER_ID` を確認
   const isAdminUser = auth().userId === process.env.ADMIN_USER_ID;
   if (isAdminRoute(req) && !isAdminUser) {
     return NextResponse.redirect(new URL('/', req.url));
@@ -6093,8 +6094,16 @@ return (
   </>
 );
 ```
+#### How to TEST `Admin` or NOT
+- middleware
+  - console.log('userId: ', auth().userId); これで `ADMIN_USER_ID` を確認
+  - `.env` に `ADMIN_USER_ID=` を追加
+- `ADMIN_USER_ID` で Login > pulldown menu に `Admin` が表示される
+- `ADMIN_USER_ID` 以外で Login > pulldown menu に `Admin` が表示されない
+  - `domain.com/admin` と直接入力すると、`Home` に redirect される
 
 ### Admin User - Loading
+#### 161 Admin Page - Loading Components
 
 ```tsx
 import { Card, CardHeader } from '@/components/ui/card';
