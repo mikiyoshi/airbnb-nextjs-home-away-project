@@ -6516,6 +6516,7 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
 ```
 
 ### API - Confirm Route
+#### 168 Stripe - Confirm Route
 
 api/confirm/route.ts
 
@@ -6552,6 +6553,18 @@ export const GET = async (req: NextRequest) => {
   redirect('/bookings');
 };
 ```
+
+#### Stripe TEST
+- [Stripe Test Card Number](https://docs.stripe.com/testing?testing-method=card-numbers#visa)
+  - Visa
+  - 4242424242424242
+  - 08/28
+  - 222
+  - cording addict
+  - Canada
+  - A8C D3F
+- Prisma 
+  - Booking `paymentStatus` `true`
 
 ### Refactor Actions
 
