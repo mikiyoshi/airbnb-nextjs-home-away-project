@@ -6228,6 +6228,7 @@ export default StatsCards;
 ```
 
 ### Admin User - Fetch Charts Data
+#### 163 Admin Page - Fetch Chart Data
 
 ```ts
 export const fetchChartsData = async () => {
