@@ -5645,6 +5645,7 @@ export default RentalsPage;
 ```
 
 ### Fetch Rental Details
+#### 152 Fetch Rental Details Function
 
 - actions.ts
 
