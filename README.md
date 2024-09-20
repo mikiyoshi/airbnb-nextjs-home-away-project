@@ -5671,6 +5671,7 @@ export const updatePropertyImageAction = async () => {
 ```
 
 ### Rentals Edit Page
+#### 153 Edit Rentals Page
 
 - rentals/[id]/edit/page.tsx
 
