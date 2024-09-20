@@ -6160,6 +6160,7 @@ export default AdminPage;
 ```
 
 ### Admin User - Fetch Stats
+#### 162 Admin Page - Stats Container
 
 ```ts
 const getAdminUser = async () => {
