@@ -5820,6 +5820,7 @@ export default AmenitiesInput;
 ```
 
 ### Update Property Action
+#### 155 Update Rental Functions
 
 ```ts
 export const updatePropertyAction = async (
