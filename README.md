@@ -6028,6 +6028,7 @@ export default ReservationsPage;
 ```
 
 ### Admin User - Setup
+#### 159 Admin Page - Setup
 
 - create app/admin/page.tsx
 - add admin to links
