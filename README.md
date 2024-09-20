@@ -6391,6 +6391,7 @@ export const createBookingAction = async (prevState: {
 ```
 
 ### Checkout Page
+#### 166 Stripe - Checkout Page
 
 ```tsx
 'use client';
