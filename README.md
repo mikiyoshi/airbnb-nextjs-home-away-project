@@ -6434,6 +6434,7 @@ export default function CheckoutPage() {
 ```
 
 ### API - Payment Route
+#### 167 Stripe - Payment Route
 
 api/payment/route.ts
 
